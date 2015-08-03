@@ -6,7 +6,7 @@ Behavior: It does not capitalize certain words such as prepositions
 Input: harry potter and the chamber of secrets
 Output: Harry Potter and the Chamber of Secrets
 
-Behavior: It capitalizes the first word
+Behavior: It capitalizes the first word of the string
 Input: harry potter and the chamber of secrets
 Output: Harry potter and the chamber of secrets
 
