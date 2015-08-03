@@ -1,0 +1,20 @@
+Behavior: It capitalizes the first letter of a word
+Input: harry potter and the chamber of secrets
+Output: Harry Potter And The Chamber Of Secrets
+
+Behavior: It does not capitalize certain words such as prepositions
+Input: harry potter and the chamber of secrets
+Output: Harry Potter and the Chamber of Secrets
+
+Behavior: It capitalizes the first word
+Input: harry potter and the chamber of secrets
+Output: Harry potter and the chamber of secrets
+
+Behavior: It makes capital letters that are not the first letter of the word lowercase
+Input: HARry POTtEr
+Output: Harry Potter
+
+
+
+
+class String
