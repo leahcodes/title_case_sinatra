@@ -1,22 +1,18 @@
 class String
   define_method(:title_case) do
     split_sentence = self.split
-    #final_sentence = []
-
     split_sentence.each do |word|
       word.capitalize!()
 
-      prep_array = ["And", "The", "Or", "For"]
-      prep_array.each() do |prep|
-        if word.eql?(prep)
+      prep_array = ["And", "The", "Or", "For", "A", "Is"]
+      prep_array.each do |prep|
+        if word == prep
           word.downcase!()
+        elsif split_sentence.index(word) == 0
+          word.capitalize!()
         end
       end
-      #final_sentence.push(word)
     end
-    #final_sentence.join("g ")
-    #final_sentence
     split_sentence.join(" ")
-
   end
 end
